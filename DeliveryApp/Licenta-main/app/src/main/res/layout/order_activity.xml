@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/marble">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listOrder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_follow_order"
+            android:text="Follow order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/OrderDetailUser"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="#4F737577"
+            app:layout_constraintStart_toStartOf="parent"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/OrderDetailUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="20dp"
+            android:text="Customer name"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:visibility="gone" />
+
+        <TextView
+            android:id="@+id/OrderDetailEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Customer email"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:visibility="gone" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

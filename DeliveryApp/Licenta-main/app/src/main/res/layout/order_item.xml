@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    app:cardElevation="4dp"
+    android:layout_marginBottom="8dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/btnNextStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="8dp"
+            android:background="#4F737577"
+            android:src="@drawable/next" />
+
+        <ImageButton
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnNextStatus"
+            android:layout_alignLeft="@+id/btnNextStatus"
+            android:layout_marginRight="8dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="22dp"
+            android:background="#4F737577"
+            android:src="@drawable/ic_action_remove" />
+
+        <TextView
+            android:id="@+id/test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="125dp"
+            android:text="Status: "
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/statusTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/test"
+            android:layout_marginTop="125dp"
+            android:text="ON_THE_WAY"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/orderDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#4f0e0d0e"
+            android:gravity="center"
+            android:text="Order Date"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+</RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/marble"
+    tools:context=".Cart">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listCart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#4F737577">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#4F737577">
+
+            <LinearLayout
+                android:layout_margin="8dp"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00EBEBEC"
+                >
+
+                <TextView
+                    android:text="Total: "
+                    android:textSize="20sp"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00EBEBEC"
+                    />
+                <TextView
+                    android:id="@+id/total"
+                    android:text="$10,000 "
+                    android:textSize="24sp"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00EBEBEC"
+                    />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnPlaceOrder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:shadowColor="@color/black"
+                android:text="Place Order "
+                android:textColor="@android:color/black"
+                android:background="#4F737577"
+                app:cornerRadius="4dp" />
+
+            <Button
+                android:id="@+id/btnClearCart"
+                android:layout_width="wrap_content"
+                android:layout_height="39dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="2dp"
+                android:text="Clear"
+                android:background="#4F737577"
+                android:textColor="@android:color/black" />
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

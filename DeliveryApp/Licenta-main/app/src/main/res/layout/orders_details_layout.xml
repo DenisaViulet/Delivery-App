@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="@drawable/marble"
+    app:cardElevation="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".DisplayOrderDetails">
+
+        <TextView
+            android:id="@+id/ProductName"
+            android:layout_width="wrap_content"
+            android:maxWidth="200dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|start"
+            android:text="Product1"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            android:paddingStart="10dp"
+            android:paddingEnd="5dp"/>
+
+        <TextView
+            android:id="@+id/ProductPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|start"
+            android:text="$10,000"
+            android:textAllCaps="true"
+            android:textStyle="italic"
+            app:layout_constraintStart_toEndOf="@id/ProductName"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"/>
+        <TextView
+            android:id="@+id/ProductQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|start"
+            android:text="x10"
+            android:textAllCaps="true"
+            android:textStyle="italic"
+            app:layout_constraintStart_toEndOf="@id/ProductPrice"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"/>
+
+        <TextView
+            android:id="@+id/totalProductPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="x10"
+            android:textAllCaps="true"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:paddingEnd="15dp"
+            android:paddingStart="15dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

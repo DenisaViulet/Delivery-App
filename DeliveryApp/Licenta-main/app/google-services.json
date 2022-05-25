@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "67896792161",
+    "firebase_url": "https://licenta-denisa-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "licenta-denisa",
+    "storage_bucket": "licenta-denisa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:67896792161:android:1fa144e40706f29b930620",
+        "android_client_info": {
+          "package_name": "com.example.licenta2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "67896792161-2p0rv1dpo4ulpbh5eivuogggcdmi4d2h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIl4WrhAMJJB9Cg34hzr4FmNOPIf_T13g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "67896792161-2p0rv1dpo4ulpbh5eivuogggcdmi4d2h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
